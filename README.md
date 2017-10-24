@@ -8,6 +8,15 @@ They were made in an effort to improve the usability of the device when using Ro
 ## Installation
 Copy the ./wps ./themes and ./backdrops directories to your ".rockbox" folder to your device. These themes use the "18-Roboto-Regular" font which is available in the Rockbox font pack.
 
+## Recommended config.cfg Entries
+It is recommended to have the following entries in your config.cfg in the
+root of your .rockbox directory
+```
+playlist catalog directory:
+root menu order: wps, playlists, database, files, bookmarks, settings, plugins, system_menu, shortcuts,
+
+```
+
 ## Variants
 All themes are considered dark themes(dark background, light foreground) similar to the default MangoPlayer's appearance.
 
