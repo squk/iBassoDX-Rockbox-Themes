@@ -1,0 +1,110 @@
+# Theme by Guillaume Cocatre-Zilgien <gcocatre@gmail.com>
+# CC-BY-SA
+
+# Disable status bar
+%wd
+# Backdrop
+%X(-)
+
+### TOUCHSCREEN AREAS FOR DX50/90
+
+# Menu
+%T(100,0,120,23,menu)
+
+# Quickscreen
+%T(0,0,72,23,quickscreen)
+
+# Contextmenu
+%T(244,0,76,23,contextmenu)
+
+# Resume (Go to WPS)
+%T(0,210,320,30,resumeplayback)
+
+# storage activity indicator off, lock on
+%xl(storageofflockon,storage_off-lock_on.bmp,0,0)
+# storage activity indicator on, lock off
+%xl(storageonlockoff,storage_on-lock_off.bmp,0,0)
+# storage activity indicator on, lock on
+%xl(storageonlockon,storage_on-lock_on.bmp,0,0)
+
+%xl(V,volume.bmp,0,0,31)
+%xl(B,battery.bmp,0,0,31)
+
+# Status Bar
+%?if(%ss(0, 2, %St(font), number), >, 15)<%Vd(status19)|%Vd(status14)>%Vd(storage)
+
+# Volume
+#
+%V(38,4,92,16,1)%Vf(FFFFFF)%Vb(000000)
+%?pv<%xd(Va)|%xd(Vb)|%xd(Vc)|%xd(Vd)|%xd(Ve)|%xd(Vf)|%xd(Vg)|%xd(Vh)|%xd(Vi)|%xd(Vj)|%xd(Vk)|%xd(Vl)|%xd(Vm)|%xd(Vn)|%xd(Vo)|%xd(Vp)|%xd(Vq)|%xd(Vr)|%xd(Vs)|%xd(Vt)|%xd(Vu)|%xd(Vv)|%xd(Vw)|%xd(Vx)|%xd(Vy)|%xd(Vz)|%xd(VA)|%xd(VB)|%xd(VC)|%xd(VD)|%xd(VE)>
+
+# Storage
+%Vl(storage,152,5,15,10,-)
+%?if(%lh, =, h)<%?if(%mh, =, h)<%xd(storageonlockon)|%xd(storageonlockoff)>|%?if(%mh, =, h)<%xd(storageofflockon)|>>
+
+# Battery
+%V(190,4,92,16,1)%Vf(FFFFFF)%Vb(000000)
+%?bl<%xd(Ba)|%xd(Bb)|%xd(Bc)|%xd(Bd)|%xd(Be)|%xd(Bf)|%xd(Bg)|%xd(Bh)|%xd(Bi)|%xd(Bj)|%xd(Bk)|%xd(Bl)|%xd(Bm)|%xd(Bn)|%xd(Bo)|%xd(Bp)|%xd(Bq)|%xd(Br)|%xd(Bs)|%xd(Bt)|%xd(Bu)|%xd(Bv)|%xd(Bw)|%xd(Bx)|%xd(By)|%xd(Bz)|%xd(BA)|%xd(BB)|%xd(BC)|%xd(BD)|%xd(BE)>
+
+# Menu
+%Vi(-,10,31,300,171,-)
+
+# Progress Bar
+%?mp<|%Vd(progressbar)>
+%Vl(progressbar,0,208,320,2,-)
+%pb(0,0,320,2,progressbar.bmp)
+
+# Cover Artwork
+%V(4,214,22,22,-)
+%Cl(0,0,22,22,c,c)
+%Cd
+
+# Metadata
+
+# Bottom bar: display date, or song metadata, or radio name and frequency
+# Playback stopped
+%?if(%mp, =, 1)<%?if(%ss(0, 2, %St(font), number), >, 15)<%Vd(date19)|%Vd(date14)>|>
+# Playback not stopped, playing music
+%?if(%mp, >, 1)<%?if(%mp, <=, 7)<%?if(%ss(0, 2, %St(font), number), >, 15)<%Vd(metadata19)|%Vd(metadata14)>%Vd(play)|>|>
+# Playback not stopped, listening to the radio
+%?if(%mp, >, 1)<%?if(%mp, >=, 8)<%?if(%ss(0, 2, %St(font), number), >, 15)<%Vd(radio19)|%Vd(radio14)>%Vd(play)|>|>
+
+# Song Metadata
+%Vl(metadata14,34,218,259,17,-)
+%Vf(ffffff)
+%s%al%?it<“%it”|%fn>%?ia<%, by %ia|>
+
+%Vl(metadata19,34,215,259,25,-)
+%Vf(ffffff)
+%s%al%?it<“%it”|%fn>%?ia<%, by %ia|>
+
+# Radio Name and Frequency
+%Vl(radio14,34,218,259,17,-)
+%Vf(555555)
+%s%al%?Tn<%Tn %(%tf FM%)|%?ty<%ty %(%tf FM%)|FM Radio %(%tf MHz%)>>
+
+%Vl(radio19,34,215,259,25,-)
+%Vf(555555)
+%s%al%?Tn<%Tn %(%tf FM%)|%?ty<%ty %(%tf FM%)|FM Radio %(%tf MHz%)>>
+
+# Play Status
+%Vl(play,299,216,17,21,-)
+%xl(playmode,playmode.bmp,0,0,7)%xd(playmode,%mp,0)
+
+# Date
+#%Vl(date14,34,218,216,17,-)
+#%Vf(555555)
+#%s%al%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>, %?cm<January|February|March|April|May|June|July|August|September|October|November|December> %ce, %cY
+
+#%Vl(date19,34,215,186,25,-)
+#%Vf(555555)
+#%s%al%ca, %cb %ce, %cY
+
+# Time
+#%Vl(date14,250,218,60,17,-)
+#%Vf(555555)
+#%s%ar%?cf<%cH:%cM|%cl:%cM %cP>
+
+#%Vl(date19,220,215,90,25,-)
+#%Vf(555555)
+#%s%ar%?cf<%cH:%cM|%cl:%cM %cP>
