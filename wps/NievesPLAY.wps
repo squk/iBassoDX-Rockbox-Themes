@@ -6,6 +6,9 @@
 # Backdrop: headphones icon by Wave of Mutilation @ Wikipedia, CC BY-SA 3.0
 %X(wps.bmp)
 
+# load smaller font for certain areas
+%Fl(2,12-Nimbus.fnt,150)
+
 ### -----------BEGIN-------------
 ### TOUCHSCREEN AREAS FOR DX50/90
 ### -----------------------------
@@ -58,11 +61,11 @@
 %xl(B,battery.bmp,0,0,31)
 
 # Status Bar
-%?if(%ss(0, 2, %St(font), number), >, 15)<%Vd(status19)|%Vd(status14)>%Vd(storage)
+#%?if(%ss(0, 2, %St(font), number), >, 15)<%Vd(status19)|%Vd(status14)>%Vd(storage)
+%Vd(status14)%Vd(storage)
 
 # Volume
-#
-%V(38,4,92,16,1)%Vf(FFFFFF)%Vb(000000)
+%V(38,4,92,13,1)%Vf(FFFFFF)%Vb(000000)
 %?pv<%xd(Va)|%xd(Vb)|%xd(Vc)|%xd(Vd)|%xd(Ve)|%xd(Vf)|%xd(Vg)|%xd(Vh)|%xd(Vi)|%xd(Vj)|%xd(Vk)|%xd(Vl)|%xd(Vm)|%xd(Vn)|%xd(Vo)|%xd(Vp)|%xd(Vq)|%xd(Vr)|%xd(Vs)|%xd(Vt)|%xd(Vu)|%xd(Vv)|%xd(Vw)|%xd(Vx)|%xd(Vy)|%xd(Vz)|%xd(VA)|%xd(VB)|%xd(VC)|%xd(VD)|%xd(VE)>
 
 # Storage
@@ -70,7 +73,7 @@
 %?if(%lh, =, h)<%?if(%mh, =, h)<%xd(storageonlockon)|%xd(storageonlockoff)>|%?if(%mh, =, h)<%xd(storageofflockon)|>>
 
 # Battery
-%V(190,4,92,16,1)%Vf(FFFFFF)%Vb(000000)
+%V(190,4,92,13,1)%Vf(FFFFFF)%Vb(000000)
 %?bl<%xd(Ba)|%xd(Bb)|%xd(Bc)|%xd(Bd)|%xd(Be)|%xd(Bf)|%xd(Bg)|%xd(Bh)|%xd(Bi)|%xd(Bj)|%xd(Bk)|%xd(Bl)|%xd(Bm)|%xd(Bn)|%xd(Bo)|%xd(Bp)|%xd(Bq)|%xd(Br)|%xd(Bs)|%xd(Bt)|%xd(Bu)|%xd(Bv)|%xd(Bw)|%xd(Bx)|%xd(By)|%xd(Bz)|%xd(BA)|%xd(BB)|%xd(BC)|%xd(BD)|%xd(BE)>
 
 # Cover Artwork
@@ -112,8 +115,6 @@
 %?if(%St(statusbar), =, off)<%s%ac%?iy<%iy %| |>%fc %fb kbps|%ac%?Fn<-%> %?It<%?if(%ss(0, 16, %It), =, %It)<%It|%ss(0, 16, %It)…>|%?if(%ss(0, 16, %Fn), =, %Fn)<%Fn|%ss(0, 16, %Fn)…>>|End of Playlist>>
 
 
-
-
 # track number or playlist entry number + track duration
 %Vl(metadata19,160,56,150,25,-)
 %Vf(a0a0a0)
@@ -148,22 +149,13 @@
 %V(0,208,320,2,-)
 %pb(0,0,320,2,progressbar.bmp)
 
-# Elapsed and Remaining Time
-%?if(%ss(0, 2, %St(font), number), >, 15)<%Vd(tracktime19)|%Vd(tracktime14)>
-
 # Elapsed Time
-%Vl(tracktime14,10,218,107,17,-)
-%ac%pc
-
-%Vl(tracktime19,10,215,107,25,-)
-%ac%pc
+%V(4,192,107,17,2)
+%al%pc
 
 # Remaining Time
-%Vl(tracktime14,202,218,108,17,-)
-%ac-%pr
-
-%Vl(tracktime19,202,215,108,25,-)
-%ac-%pr
+%V(200,192,116,17,2)
+%ar-%pr
 
 # Rewind
 %V(117,213,17,21,-)
