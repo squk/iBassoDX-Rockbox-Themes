@@ -39,7 +39,7 @@ These themes were made specifically for the iBasso DX50 and DX90 devices.
 They were made in an effort to improve the usability of the device when using Rockbox while keeping aesthetics in mind. I currently have plans to improve them such that they have a similar interface/experience as the default MangoPlayer application that ships with the DX50/90.
 
 ## Installation
-Copy the ./wps ./themes ./icons and ./backdrops directories to your ".rockbox" folder to your device. These themes use the "18-Roboto-Regular" font which is available in the Rockbox font pack.
+Copy the ./wps ./themes ./icons and ./backdrops directories to your ".rockbox" folder to your device. These themes use the "18-Roboto-Regular" font which is available in the Rockbox font pack. Alternatively run the "install.sh" script with ADB enabled on your device.
 
 ## Recommended config.cfg Entries
 It is recommended to have the following entries in your config.cfg in the
