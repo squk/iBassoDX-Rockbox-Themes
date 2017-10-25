@@ -88,7 +88,7 @@
 %s%al%?Tn<%Tn %(%tf FM%)|%?ty<%ty %(%tf FM%)|FM Radio %(%tf MHz%)>>
 
 # Play Status
-%Vl(play,299,216,17,21,-)
+%Vl(play,299,213,17,21,-)
 %xl(playmode,playmode.bmp,0,0,7)%xd(playmode,%mp,0)
 
 # Date
