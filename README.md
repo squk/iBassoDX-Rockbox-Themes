@@ -5,6 +5,7 @@ NievesPLAY
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesPLAY.wps.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesPLAY.sbs.png">
 </p>
 
@@ -12,6 +13,7 @@ NievesRED
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesRED.wps.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesRED.sbs.png">
 </p>
 
@@ -19,6 +21,7 @@ NievesGREEN
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesGREEN.wps.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesGREEN.sbs.png">
 </p>
 
@@ -26,6 +29,7 @@ NievesBLUE
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesBLUE.wps.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesBLUE.sbs.png">
 </p>
 
