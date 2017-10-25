@@ -1,5 +1,34 @@
 # iBasso DX50/90 Rockbox Themes
 
+## Screenshots
+NievesPLAY
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesPLAY.wps.png">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesPLAY.sbs.png">
+</p>
+
+NievesRED
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesRED.wps.png">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesRED.sbs.png">
+</p>
+
+NievesGREEN
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesGREEN.wps.png">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesGREEN.sbs.png">
+</p>
+
+NievesBLUE
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesBLUE.wps.png">
+<img src="https://raw.githubusercontent.com/ctnieves/iBassoDX-Rockbox-Themes/master/screenshots/NievesBLUE.sbs.png">
+</p>
+
 ## About
 These themes were made specifically for the iBasso DX50 and DX90 devices.
 
@@ -21,9 +50,6 @@ root menu order: wps, playlists, database, files, bookmarks, settings, plugins, 
 All themes are considered dark themes(dark background, light foreground) similar to the default MangoPlayer's appearance.
 
 Currently there is a RED, GREEN, BLUE and PLAY variant. The PLAY variant of the theme is inspired by Google Play's UI color palette.
-
-## Screenshots
-Screenshots will be added soon.
 
 ## Credits
 These themes are currently adaptations of the "Googley" themes created by Guillaume Cocatre-Zilgi. As development moves forward, their likeliness is diverging.
