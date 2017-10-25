@@ -36,7 +36,19 @@ NievesBLUE
 ## About
 These themes were made specifically for the iBasso DX50 and DX90 devices.
 
+Top left bar indicates volume level. Top right bar indicates battery level.
+
 They were made in an effort to improve the usability of the device when using Rockbox while keeping aesthetics in mind. I currently have plans to improve them such that they have a similar interface/experience as the default MangoPlayer application that ships with the DX50/90.
+
+## Touchable Components
+Top-Left:       Opens the quickscreen
+Top-Middle:     Opens the main menu
+Top-Right:      Opens the context menu
+Progress Bar:   Draggable for seeking a track.
+Play/Pause:     Toggles play or pause. Long-pressing stops playback.
+Next/Previous:  Holding seeks through the track. Pressing plays the next or previous track.
+Album Art:      Single tap opens the current playlist. Long press opens the
+file browser
 
 ## Installation
 Copy the ./wps ./themes ./icons and ./backdrops directories to your ".rockbox" folder to your device. These themes use the "18-Roboto-Regular" font which is available in the Rockbox font pack. Alternatively run the "install.sh" script with ADB enabled on your device.
